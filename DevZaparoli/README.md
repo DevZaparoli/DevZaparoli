@@ -1,10 +1,8 @@
 <div align="center">
 
-<!-- Entrada Kamui — ocupa a primeira tela ao abrir o perfil e termina na dimensão Kamui. -->
-<img src="assets/kamui-entrada.svg" width="100%" alt="O Mangekyō do Obito abre o Kamui e leva para a dimensão">
-
-<!-- Banner fixo (Obito) — toca uma vez ao abrir o perfil e depois fica em loop sutil. -->
-<img src="assets/kamui-obito.svg" width="100%" alt="Mangekyō Sharingan do Obito ativando o Kamui">
+<!-- Kamui — o Mangekyō do Obito abre o vórtice, tudo é sugado e o nome sai da dimensão Kamui.
+     Toca uma vez ao abrir o perfil e depois fica em loop sutil. -->
+<img src="assets/kamui.svg" width="100%" alt="Mangekyō Sharingan do Obito abrindo o Kamui">
 
 </div>
 
