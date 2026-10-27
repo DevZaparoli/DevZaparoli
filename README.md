@@ -1,6 +1,8 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=F1F1F1&center=true&vCenter=true&random=false&width=560&lines=%E2%8A%B9+Bem-vindo+ao+meu+perfil!+%CB%99%E1%B5%95%CB%99+%E2%8A%B9)](https://git.io/typing-svg)
+<!-- Kamui — o Mangekyō do Obito abre o vórtice, tudo é sugado e o nome sai da dimensão Kamui.
+     Toca uma vez ao abrir o perfil e depois fica em loop sutil. -->
+<img src="assets/kamui.svg" width="100%" alt="Mangekyō Sharingan do Obito abrindo o Kamui">
 
 </div>
 
