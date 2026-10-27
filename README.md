@@ -10,7 +10,7 @@ Me chamo **Kauan Zaparoli Araujo**, tenho 18 anos e moro em São Paulo - SP. Atu
 
 ---
 
-<img align="right" width="45%" src="https://giffiles.alphacoders.com/126/126066.gif" alt="GIF do perfil">
+<img align="right" width="45%" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmFyaWVoODllbm44NXh1djM4eDZ3azdyMmJ5eXg5bzhhcGtzeWozaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/odQ5A4pdaDU8E/giphy.gif" alt="GIF do perfil">
 
 ### Connect with me!
 
