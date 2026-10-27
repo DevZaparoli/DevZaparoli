@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevZaparoli</title>
+  <meta name="description" content="Portfólio de Kauan Zaparoli Araujo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050505;
+      --surface: #0f0f10;
+      --border: #222;
+      --text: #f1f1f1;
+      --muted: #a3a3a3;
+      --red: #e0101e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text); }
+    body { font-family: 'Fira Code', Consolas, monospace; line-height: 1.6; }
+    body.intro-ativa { overflow: hidden; }
+
+    /* ---------- entrada Kamui em tela cheia ---------- */
+    #kamui-intro {
+      position: fixed; inset: 0; z-index: 10;
+      background: #020202;
+      display: grid; place-items: center;
+      transition: opacity .9s ease, transform .9s ease, filter .9s ease;
+    }
+    #kamui-intro img { width: 100%; height: 100%; object-fit: cover; }
+    @media (orientation: portrait) {
+      #kamui-intro img { object-fit: contain; }
+    }
+    #kamui-intro.saindo { opacity: 0; transform: scale(1.08); filter: blur(6px); pointer-events: none; }
+    #pular {
+      position: absolute; right: 20px; bottom: 20px;
+      background: transparent; color: var(--muted);
+      border: 1px solid #333; border-radius: 6px;
+      padding: 6px 14px; font: inherit; font-size: 13px; cursor: pointer;
+    }
+    #pular:hover { color: var(--text); border-color: var(--red); }
+
+    /* ---------- portfólio ---------- */
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px 64px; }
+    .banner { width: 100%; display: block; border-radius: 10px; }
+    h2 { font-size: 18px; margin: 40px 0 12px; }
+    h2::before { content: "› "; color: var(--red); }
+    p { color: #d6d6d6; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 32px 0; }
+    .stack { display: flex; flex-wrap: wrap; gap: 14px; }
+    .stack a {
+      display: grid; place-items: center; width: 64px; height: 64px;
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      transition: border-color .2s, transform .2s;
+    }
+    .stack a:hover { border-color: var(--red); transform: translateY(-2px); }
+    .stack img { width: 36px; height: 36px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 12px; }
+    .stats img { max-width: 100%; height: auto; }
+    .snake { width: 100%; margin-top: 24px; }
+    a { color: var(--text); }
+  </style>
+</head>
+<body class="intro-ativa">
+
+  <div id="kamui-intro" aria-hidden="true">
+    <img id="kamui-img" alt="">
+    <button id="pular" type="button">pular ›</button>
+  </div>
+
+  <main>
+    <img class="banner" src="assets/kamui-obito.svg" alt="Mangekyō Sharingan do Obito ativando o Kamui">
+
+    <h2>Sobre mim</h2>
+    <p>Me chamo <strong>Kauan Zaparoli Araujo</strong>, tenho 18 anos e moro em São Paulo - SP. Atualmente curso Ciência da Computação na Universidade Cruzeiro do Sul. Trabalho como Assistente de TI e tenho interesse em atuar como programador.</p>
+
+    <h2>Connect with me!</h2>
+    <a href="https://www.linkedin.com/in/kauan-araujo-dev/"><img src="https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=FF00F6" alt="LinkedIn"></a>
+
+    <h2>My Stack ~</h2>
+    <div class="stack">
+      <a href="https://www.python.org" title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"></a>
+      <a href="https://www.mysql.com" title="SQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL"></a>
+      <a href="https://www.cisco.com" title="Redes"><img src="https://cdn.simpleicons.org/cisco/FFFFFF" alt="Redes"></a>
+      <a href="https://www.kernel.org" title="Linux"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"></a>
+      <a href="https://www.java.com" title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"></a>
+      <a href="https://github.com/DevZaparoli" title="GitHub"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub"></a>
+    </div>
+
+    <h2>GitHub Stats</h2>
+    <div class="stats">
+      <img src="https://github-readme-stats-two-omega-43.vercel.app/api?username=DevZaparoli&show_icons=true&locale=pt-br&commits_year=2026&hide=contribs&cache_seconds=21600&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&border_color=ffffff&ring_color=ffffff&custom_title=My%20GitHub%20Statistics" alt="GitHub Stats">
+      <img src="https://github-readme-stats-two-omega-43.vercel.app/api/top-langs/?username=DevZaparoli&layout=compact&custom_title=Stack&langs_count=8&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&border_color=ffffff&ring_color=ffffff" alt="Linguagens">
+    </div>
+    <img class="snake" src="https://raw.githubusercontent.com/DevZaparoli/DevZaparoli/output/github-contribution-grid-snake-dark.svg" alt="Snake comendo as contribuições">
+  </main>
+
+  <script>
+    // A animação do SVG dura ~6,5s; sai um pouco depois de chegar na dimensão Kamui.
+    const DURACAO_MS = 5600;
+    const intro = document.getElementById('kamui-intro');
+    const img = document.getElementById('kamui-img');
+    let encerrado = false;
+
+    function encerrar() {
+      if (encerrado) return;
+      encerrado = true;
+      intro.classList.add('saindo');
+      document.body.classList.remove('intro-ativa');
+      setTimeout(() => intro.remove(), 1000);
+    }
+
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      intro.remove();
+      document.body.classList.remove('intro-ativa');
+    } else {
+      img.addEventListener('load', () => setTimeout(encerrar, DURACAO_MS));
+      img.addEventListener('error', encerrar);
+      img.src = 'assets/kamui-entrada.svg';
+      document.getElementById('pular').addEventListener('click', encerrar);
+      addEventListener('keydown', e => { if (e.key === 'Escape' || e.key === 'Enter') encerrar(); });
+      setTimeout(encerrar, DURACAO_MS + 4000); // garantia se a imagem demorar
+    }
+  </script>
+</body>
+</html>
